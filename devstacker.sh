@@ -29,7 +29,7 @@ sleep 10
 IP=`nova show $ID | grep accessIPv4 | awk '{print $4}'`
 echo "Server IP: $IP"
 
-PRIVATE_KEY="$HOME/.ssh/id_rsa.rackspace"
+PRIVATE_KEY="$HOME/.ssh/id_rsa.devstacker"
 USER="root"
 OPTIONS="-i $PRIVATE_KEY -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o LogLevel=ERROR -o PasswordAuthentication=no"
 SSH="ssh $OPTIONS $USER@$IP"
