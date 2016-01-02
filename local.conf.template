@@ -58,7 +58,7 @@ enable_service h-api-cw
 # Automatically download and register a VM image that Heat can launch
 # For more information on Heat and DevStack see
 # http://docs.openstack.org/developer/heat/getting_started/on_devstack.html
-IMAGE_URLS+=",http://cloud.fedoraproject.org/fedora-20.x86_64.qcow2"
+IMAGE_URLS+=",http://download.fedoraproject.org/pub/fedora/linux/releases/21/Cloud/Images/x86_64/Fedora-Cloud-Base-20141203-21.x86_64.qcow2"
 
 # Logging
 LOGDAYS=1
